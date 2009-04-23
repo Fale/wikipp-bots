@@ -15,8 +15,8 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef CURRENCYBOT_MAIN
-#define CURRENCYBOT_MAIN
+#ifndef CURRENCYBOT
+#define CURRENCYBOT
 
 #include <wiki++/libs/prgdata.h>
 #include <wiki++/wiki/login.h>
