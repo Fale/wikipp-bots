@@ -32,9 +32,9 @@ include_directories( ${Wikipp_INCLUDE_DIR} )
 
 add_executable ( stormbot main.cpp )
 
-install( TARGETS currencybot
+install( TARGETS stormbot
 RUNTIME DESTINATION bin
 LIBRARY DESTINATION lib
 ARCHIVE DESTINATION lib/static )
 
-target_link_libraries ( stormbot libwikipp_extended_currency.so libwikipp_libs_prgdata.so libwikipp_wiki_login.so libwikipp_wiki_write.so )
+target_link_libraries ( stormbot libwikipp_extended_storm.so libwikipp_libs_prgdata.so libwikipp_wiki_login.so )

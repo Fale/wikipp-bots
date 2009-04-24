@@ -20,9 +20,9 @@
 
 #define WIKIMEDIA
 
-#include <libs/prgdata.h>
-#include <wiki/login.h>
-#include <extended/move.h>
+#include <wiki++/libs/prgdata.h>
+#include <wiki++/wiki/login.h>
+#include <wiki++/extended/storm.h>
 
 int main()
 {
@@ -43,11 +43,11 @@ int main()
   wikipp::wiki::login::wikiLogin( proj, user, pass );
 
   // Start the movePage procedure
-  wikipp::extended::move move;
-  move.setLang( lang );
-  move.setTZ( tizo );
-  move.setFreq( freq );
-  move.movePage( proj, page );
+  wikipp::extended::storm storm;
+  storm.setLang( lang );
+  storm.setTZ( tizo );
+  storm.setFreq( freq );
+  storm.movePage( proj, page );
 
   return 0;
 }
